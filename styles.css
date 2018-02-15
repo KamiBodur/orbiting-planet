@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#universe {
+  background: black;
+  background: radial-gradient(#555, #000);
+}
+
+#stars {
+  background-image: url('img/stars.png');
+  /* height and width: must have - in other way nothing appears */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#sun {
+  height: 200px;
+  width: 200px;
+  /* margin added because we want the "sun" to be in the center of page, without this in the center of the page was left-top corner of div */
+  margin-top: -100px;
+  margin-left: -100px;
+  background: orange;
+  background: radial-gradient(#f5c313, #ec7e08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  box-shadow: 0 0 70px 20px #f5c91a;
+}
+
+#earthOrbit {
+  border: 1px solid red;
+  height: 600px;
+  width: 600px;
+  /* same trick as with the 'sun' div */
+  margin-top: -300px;
+  margin-left: -300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
